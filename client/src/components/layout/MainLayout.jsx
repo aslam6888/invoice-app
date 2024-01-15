@@ -7,15 +7,15 @@ import Header from './Header'
 
 function MainLayout() {
     return (
-        <div>
+        <Box  backgroundColor={'gray.100'}>
             <SideNav />
             <Box ml={'70px'} height={'100vh'} display={'flex'} flexDir={'column'}>
                 <Header/>
-                <Box p={5}  h={'100%'}>
+                <Box mx={8} my={4} h={'100%'}>
                     <Outlet />
                 </Box>
             </Box>
-        </div>
+        </Box>
     )
 }
 

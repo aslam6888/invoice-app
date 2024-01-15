@@ -1,8 +1,9 @@
 import React from 'react'
+import { Text } from '@chakra-ui/react'
 
 function CheckOut() {
   return (
-    <div>CheckOut</div>
+    <Text fontWeight={500} fontSize={18}>Order Details</Text>
   )
 }
 

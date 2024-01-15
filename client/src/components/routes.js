@@ -1,6 +1,7 @@
 import LoginPage from "../pages/Login/LoginPage.jsx"
 import Dashboard from "../pages/Dashboard"
-import Pos from "../pages/Pos"
+import InvoiceList from "../pages/Invoice/List/InvoiceList.jsx"
+import InvoiceCreate from "../pages/Invoice/Create/InvoiceCreate.jsx"
 import Inventory from "../pages/Inventory"
 import Settings from "../pages/Settings"
 import MainLayout from "./layout/MainLayout.jsx"
@@ -16,8 +17,12 @@ var routes = [
                 element: <PrivateRoute component={Dashboard} name={'dashboard'} />
             },
             {
-                path: '/pos',
-                element: <PrivateRoute component={Pos} name={'pos'} />
+                path: '/invoices',
+                element: <PrivateRoute component={InvoiceList} name={'InvoiceList'} />,
+            },
+            {
+                path: '/invoice/create',
+                element: <PrivateRoute component={InvoiceCreate} name={'InvoiceCreate'} />
             },
             {
                 path: '/inventory',

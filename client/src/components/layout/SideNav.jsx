@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 function SideNav() {
   var routes = [
     { path: '/', name: 'Dashboard', icon: <PiChartBarLight size={30} stroke={1}/> },
-    { path: '/pos', name: 'POS', icon: <PiReceiptLight size={30} /> },
+    { path: '/invoices', name: 'Invoices', icon: <PiReceiptLight size={30} /> },
     { path: '/inventory', name: 'Inventory', icon: <PiWarehouseLight size={30} /> },
     { path: '/settings', name: 'Setting', icon: <PiGearLight size={30} /> },
   ]
